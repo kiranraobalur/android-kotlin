@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#97999B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#E4E6E9"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.4"
+            android:src="@drawable/food"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/food_image"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/namec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:id="@+id/categoryc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food_name"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/pricec"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_100_00"
+                        android:layout_marginStart="40dp"
+                        android:textSize="15sp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/minusItemc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="gone"
+                    android:contentDescription="@string/food_image"
+                    android:src="@drawable/round_clear_24" />
+
+                <TextView
+                    android:id="@+id/quantityc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/addItemc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/food_image"
+                    android:src="@drawable/round_add_24" />
+
+                <TextView
+                    android:id="@+id/amountc"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/_0"
+                    android:textAlignment="textEnd"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/baseline_delete_forever_24"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
